@@ -18,11 +18,11 @@ $username="u943645959_Teamjobportal";
 $dbpassword="Fahim@Mushfiq@Ashfaq123";
 $dbname="u943645959_jobportal";
 
-// Create connection
+
 $conn = new mysqli($servername, $username, $dbpassword, $dbname);
 
 $output = '';
-// Check connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
