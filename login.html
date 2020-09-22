@@ -7,28 +7,46 @@
 	
 	<script src="https://kit.fontawesome.com/96c06ef8e8.js" crossorigin="anonymous"></script>
 	
+	
+	
+	
+	<script>
+    function validateForm() {
+    var x = document.forms["logForm"]["name"].value;
+	var y = document.forms["logForm"]["password"].value;
+    if (x == "") {
+    alert("Name is needed");
+    return false;
+      }
+	  
+	  
+	if (y == "") {
+    alert("Password is needed");
+    return false;
+      }
+    }
+	
+	 </script>
+	
+	
+	
+	
 	<title> Log In </title>
 	
 </head>
 <body>
 <center>
 <div class="login"> 
-	<form action="login.php" method="post">
+	<form action="login.php" method="post" name="logForm" onsubmit="return validateForm()">
 	<span class="header">LOG IN</span>
 	<br />
 	
 	
-	<!-- <div> 
-	
-    <i class="fas fa-user"></i>
-	<input class="ib" type="id" name="id" placeholder="YOUR ID"/>
-	
-	</div> -->
 	
 	<div> 
 	
 	<i class="fas fa-signature"></i>
-	<input class="ib" id="name" type="name" name="name" placeholder="YOUR NAME"/>
+	<input class="ib" id="name" type="name" name="name" placeholder="YOUR USERNAME"/>
 	
 	</div>
 	
@@ -38,18 +56,14 @@
 	<i class="fas fa-unlock-alt"></i>
 	<input class="ib" type="password" name="password" placeholder="YOUR PASSWORD"/>
 	
+	
 	</div>
 	
-	<button class="btn" type="submit">  LOG IN </a> </button>
+	<button class="btn" type="submit">  LOG IN  </button>
 	
 	</form>
 	</div>
 </center>
-
-
-
-
-
 
 
 
