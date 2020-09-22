@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" href="postJob.css">
+	
+	<title> Post a job </title>
+</head>
+<body>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="postJob"> 
+	<form action="postJob.php" method="post" id="signupForm" onsubmit="return formSubmit();">
+	
+	<span class="header">Post job</span>
+	<br />
+	
+	
+	
+	
+	<div> 
+    <input class="ib" id="id" type="id" name="id" placeholder="JOB ID"/>
+	
+	</div>
+	
+	
+	<div> 
+    <input class="ib" id="prvd" type="name" name="provider" placeholder="COMPANY NAME"/>
+	
+	</div>
+	
+	
+	<div> 
+	
+	<select name="type" class="ib" placeholder="JOB TYPE">
+	<option value="select">IT</option>
+    <option value="accept">Bank</option>
+    <option value="aeject">Electric</option>
+    </select>
+	
+	</div>
+	
+	
+	<div> 
+	
+	<input class="ib" id="name" type="name" name="name" placeholder="JOB TITLE"/>
+	
+	</div>
+	
+	<div> 
+	
+	<input class="ib" id="salary" type="text" name="salary" placeholder="SALARY"/>
+	
+	</div>
+	
+	<div> 
+	
+	<i class="fas fa-unlock-alt"></i>
+	<!-- <input class="ib" id="description" type="text" name="description" placeholder="ABOUT JOB"/> -->
+	
+	<textarea class="ib" rows="4" cols="50" name="description" placeholder="ABOUT JOB"></textarea>
+	
+	</div>
+	
+	<!-- <div> 
+	
+	<i class="fas fa-lock-open"></i>
+	<select name="permission" id="ib">
+	<option value="select">Give parmission</option>
+    <option value="accept">Accept</option>
+    <option value="aeject">Reject</option>
+    </select>
+	
+	</div> -->
+	
+	
+	<button class="btn" id="button" type="submit" value="Submit"> Post </button>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
